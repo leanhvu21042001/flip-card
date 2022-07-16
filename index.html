@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip card</title>
+    <style>
+      body {
+        perspective: 600px;
+      }
+      .card {
+        height: 500px;
+        width: 300px;
+        margin: 5% auto;
+        background-color: rgb(29, 134, 99);
+        transition: 2s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+      .card:hover {
+        background-color: rgb(201, 102, 37);
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card"></div>
+  </body>
+</html>
